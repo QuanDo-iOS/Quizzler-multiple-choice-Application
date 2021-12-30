@@ -23,16 +23,6 @@ struct processQuiz {
     ]
     var numberQuestion = 0
     var score = 0
-    func checkAnswerButton() -> String {
-        switch self.quiz[numberQuestion].correctAnswer {
-        case self.quiz[numberQuestion].a[0] :
-            return "option 1"
-        case self.quiz[numberQuestion].a[1] :
-            return "option 2"
-        default :
-            return "option 3"
-        }
-    }
     
     func checkUserAnswer(_ userAnswer : String) -> Bool {
         if userAnswer == self.quiz[numberQuestion].correctAnswer {
